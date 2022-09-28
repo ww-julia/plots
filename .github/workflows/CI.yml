@@ -40,7 +40,7 @@ jobs:
       matrix:
         # Notebooks need to be executed
         notebook:
-          - plots
+          - plotsjl-gallery
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

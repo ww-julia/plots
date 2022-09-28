@@ -12,8 +12,8 @@ ENV PATH $JULIA_PATH/bin:$PATH
 COPY --from=julia:1.8.1 ${JULIA_PATH} /usr/local/
 
 # Python dependencies e.g. matplotlib
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # Julia environment
 COPY Project.toml Manifest.toml ./
